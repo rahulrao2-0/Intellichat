@@ -9,7 +9,10 @@ const app = express();
 const port = 8080;
 
 app.use(express.json())
-app.use(cors());
+app.use(cors({
+  origin: "https://intellichat-bice.vercel.app/",
+  Credentials: true 
+}));
 
 app.use("/api",chatRoutes)
 
