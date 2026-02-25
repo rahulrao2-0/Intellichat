@@ -9,10 +9,14 @@ const app = express();
 const port = 8080;
 
 app.use(express.json())
-app.use(cors({
-  origin: "https://intellichat-sigma.vercel.app/",
-  Credentials: true 
-}));
+const corsOptions = {
+  // REMOVE the trailing slash at the end of the URL
+  origin: 'https://intellichat-sigma.vercel.app', 
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 
 app.use("/api",chatRoutes)
 
