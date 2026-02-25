@@ -10,7 +10,7 @@ const port = 8080;
 
 app.use(express.json())
 app.use(cors({
-  origin: "https://intellichat-bice.vercel.app/",
+  origin: "https://intellichat-sigma.vercel.app/",
   Credentials: true 
 }));
 
