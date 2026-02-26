@@ -1,13 +1,8 @@
 .chats {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    max-width: 700px;
     max-height: 65vh;
     overflow-y: auto;
-    padding: 16px;
-    background: #181c24;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 8rem;
     scrollbar-width: thin;
     scrollbar-color: #339cff #23272f;
 }
@@ -21,42 +16,6 @@
 .chats::-webkit-scrollbar-thumb {
     background: #339cff;
     border-radius: 8px;
-}
-
-.userDiv,
-.gptDiv {
-    display: flex;
-    align-items: flex-end;
-    max-width: 70%;
-    padding: 10px 16px;
-    border-radius: 18px;
-    font-size: 1.08rem;
-    word-break: break-word;
-    margin-bottom: 2px;
-}
-
-.userDiv {
-    align-self: flex-end;
-    background: linear-gradient(90deg, #339cff 60%, #5e9cff 100%);
-    color: #fff;
-    border-bottom-right-radius: 4px;
-    box-shadow: 0 1px 4px rgba(51, 156, 255, 0.08);
-}
-
-.gptDiv {
-    align-self: flex-start;
-    background: #23272f;
-    color: #e2e8f0;
-    border-bottom-left-radius: 4px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-}
-
-.userMessage {
-    margin: 0;
-    font-weight: 500;
-}
-
-padding: 8rem;
 }
 
 .userDiv {
