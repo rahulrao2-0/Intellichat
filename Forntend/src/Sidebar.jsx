@@ -41,7 +41,7 @@ function Sidebar() {
 
          const res = await response.json();
 
-         setPrevChats(res);
+         setPrevChats(res.messages || []);
          setNewChat(false);
          setReply(null)
       } catch (err) {
